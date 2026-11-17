@@ -1,0 +1,6 @@
+語音修正內容：
+1. 補入 audio/en/ 資料夾內的 18 個英文名稱錄音。
+2. 重建 data/audio-map.json，完成 18 個景點中英文音檔對照。
+3. 保留原本 js/app.js 的英文先播、中文後播流程及停止播放行為。
+4. 未修改網站版面、景點圖片及其他頁面設計。
+5. 請以 VS Code + Live Server 開啟 index.html 測試，勿直接雙擊 HTML。
