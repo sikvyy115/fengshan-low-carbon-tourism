@@ -1,0 +1,74 @@
+{
+  "F01": {
+    "zh": "audio/liangbo.m4a",
+    "en": "audio/en/09_liang_bo_mutton.m4a"
+  },
+  "F02": {
+    "zh": "audio/lao_zhang_aiyu_jelly.m4a",
+    "en": "audio/en/10_lao_zhang_aiyu_jelly.m4a"
+  },
+  "F03": {
+    "zh": "audio/wu_ji_traditional_pastries.m4a",
+    "en": "audio/en/11_wu_ji_traditional_pastries.m4a"
+  },
+  "F04": {
+    "zh": "audio/nantai_spring_rolls.m4a",
+    "en": "audio/en/12_nantai_spring_rolls.m4a"
+  },
+  "F05": {
+    "zh": "audio/halal_chaozhou_beef_offal.m4a",
+    "en": "audio/en/13_halal_chaozhou_beef_offal.m4a"
+  },
+  "F06": {
+    "zh": "audio/mingshan_herbal_tea.m4a",
+    "en": "audio/en/14_mingshan_herbal_tea.m4a"
+  },
+  "S01": {
+    "zh": "audio/dadong.m4a",
+    "en": "audio/en/01_dadong_arts_center.m4a"
+  },
+  "S02": {
+    "zh": "audio/weiwuying.m4a",
+    "en": "audio/en/02_weiwuying_arts_center.m4a"
+  },
+  "S03": {
+    "zh": "audio/mimi_village.m4a",
+    "en": "audio/en/03_weiwuying_street_art_village.m4a"
+  },
+  "S04": {
+    "zh": "audio/fengyi.m4a",
+    "en": "audio/en/04_fongyi_academy.m4a"
+  },
+  "S05": {
+    "zh": "audio/huangpu.m4a",
+    "en": "audio/en/05_huangpu_new_village.m4a"
+  },
+  "S06": {
+    "zh": "audio/east_gate.m4a",
+    "en": "audio/en/06_east_minor_gate.m4a"
+  },
+  "S07": {
+    "zh": "audio/chenglan_battery.m4a",
+    "en": "audio/en/07_chenglan_battery.m4a"
+  },
+  "S08": {
+    "zh": "audio/datie_street.m4a",
+    "en": "audio/en/08_datie_street.m4a"
+  },
+  "T01": {
+    "zh": "audio/tiangong.m4a",
+    "en": "audio/en/15_fengshan_tiangong_temple.m4a"
+  },
+  "T02": {
+    "zh": "audio/fengshan_chenghuang_temple.m4a",
+    "en": "audio/en/16_fengshan_chenghuang_temple.m4a"
+  },
+  "T03": {
+    "zh": "audio/longshan.m4a",
+    "en": "audio/en/17_fongshan_longshan_temple.m4a"
+  },
+  "T04": {
+    "zh": "audio/shuangci.m4a",
+    "en": "audio/en/18_shuangci_pavilion.m4a"
+  }
+}

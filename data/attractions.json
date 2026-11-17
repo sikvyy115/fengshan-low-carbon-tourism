@@ -1,0 +1,288 @@
+[
+    {
+    "id":"F01",
+    "name":"倆伯羊肉",
+    "type":"美食",
+    "station":"O13 大東站",
+    "image":"images/F01.jpg",
+    "intro":"倆伯羊肉是鳳山知名羊肉料理店，以傳統料理方式呈現地方特色美食，深受在地居民喜愛。",
+    "english":"Liang Bo Mutton Restaurant is famous for traditional mutton dishes and local flavors.",
+    "traffic":"捷運橘線 O13 大東站，步行約5分鐘。",
+    "audio":{
+    "zh":"audio/F01_zh.mp3",
+    "en":"audio/F01_en.mp3"
+    }
+    },
+    
+    
+    {
+    "id":"F02",
+    "name":"老張愛玉",
+    "type":"美食",
+    "station":"O12 鳳山站",
+    "image":"images/F02.jpg",
+    "intro":"老張愛玉是鳳山特色傳統甜品店，以清爽愛玉冰帶給遊客古早味的夏日滋味。",
+    "english":"Lao Zhang Aiyu is a traditional dessert shop famous for refreshing aiyu jelly.",
+    "traffic":"捷運橘線 O12 鳳山站附近。",
+    "audio":{
+    "zh":"audio/F02_zh.mp3",
+    "en":"audio/F02_en.mp3"
+    }
+    },
+    
+    
+    {
+    "id":"F03",
+    "name":"吳記餅舖",
+    "type":"美食",
+    "station":"O13 大東站",
+    "image":"images/F03.jpg",
+    "intro":"吳記餅舖傳承傳統糕餅製作技術，是鳳山居民熟悉的地方伴手禮。",
+    "english":"Wu Ji Bakery is a traditional bakery known for local pastries and souvenirs.",
+    "traffic":"捷運橘線 O13 大東站附近。",
+    "audio":{
+    "zh":"audio/F03_zh.mp3",
+    "en":"audio/F03_en.mp3"
+    }
+    },
+    
+    
+    {
+    "id":"F04",
+    "name":"南台春捲",
+    "type":"美食",
+    "station":"O12 鳳山站",
+    "image":"images/F04.jpg",
+    "intro":"南台春捲是鳳山在地傳統小吃，以新鮮食材與古早味料理方式受到喜愛。",
+    "english":"Nan Tai Spring Roll is a local snack featuring fresh ingredients and traditional flavors.",
+    "traffic":"捷運橘線 O12 鳳山站周邊。",
+    "audio":{
+    "zh":"audio/F04_zh.mp3",
+    "en":"audio/F04_en.mp3"
+    }
+    },
+    
+    
+    {
+    "id":"F05",
+    "name":"高雄清真潮州牛雜餐廳",
+    "type":"美食",
+    "station":"O10 衛武營站",
+    "image":"images/F05.jpg",
+    "intro":"高雄清真潮州牛雜餐廳結合潮州料理與清真飲食文化，讓遊客體驗多元飲食特色。",
+    "english":"This restaurant combines Chaozhou cuisine with halal food culture and unique local flavors.",
+    "traffic":"捷運橘線 O10 衛武營站附近。",
+    "audio":{
+    "zh":"audio/F05_zh.mp3",
+    "en":"audio/F05_en.mp3"
+    }
+    },
+    
+    
+    {
+    "id":"F06",
+    "name":"明山青草茶",
+    "type":"美食",
+    "station":"O12 鳳山站",
+    "image":"images/F06.jpg",
+    "intro":"明山青草茶提供傳統青草茶飲品，是鳳山居民消暑解渴的特色店家。",
+    "english":"Ming Shan Herbal Tea Shop offers traditional herbal drinks loved by local people.",
+    "traffic":"捷運橘線 O12 鳳山站附近。",
+    "audio":{
+    "zh":"audio/F06_zh.mp3",
+    "en":"audio/F06_en.mp3"
+    }
+    },
+
+    {
+        "id":"S01",
+        "name":"大東藝術中心",
+        "type":"探索",
+        "station":"O13 大東站",
+        "image":"images/S01.jpg",
+        "intro":"大東藝術中心是鳳山重要文化場域，結合表演藝術、公共空間與特色建築，展現城市藝術魅力。",
+        "english":"Dadong Arts Center is a cultural space featuring performances, architecture, and art experiences.",
+        "traffic":"捷運橘線 O13 大東站，步行約3分鐘。",
+        "audio":{
+        "zh":"audio/S01_zh.mp3",
+        "en":"audio/S01_en.mp3"
+        }
+        },
+        
+        
+        {
+        "id":"S02",
+        "name":"衛武營國家藝術文化中心",
+        "type":"探索",
+        "station":"O10 衛武營站",
+        "image":"images/S02.jpg",
+        "intro":"衛武營國家藝術文化中心是南台灣重要藝術場館，以特殊建築與多元表演藝術吸引遊客。",
+        "english":"Weiwuying is a major arts center in southern Taiwan with unique architecture and performances.",
+        "traffic":"捷運橘線 O10 衛武營站，步行即可抵達。",
+        "audio":{
+        "zh":"audio/S02_zh.mp3",
+        "en":"audio/S02_en.mp3"
+        }
+        },
+        
+        
+        {
+        "id":"S03",
+        "name":"衛武迷迷村",
+        "type":"探索",
+        "station":"O10 衛武營站",
+        "image":"images/S03.jpg",
+        "intro":"衛武迷迷村以大型彩繪牆面打造藝術街區，遊客可以在巷弄中欣賞創意作品。",
+        "english":"Weiwuying Mural Village is a colorful art area filled with creative street murals.",
+        "traffic":"捷運橘線 O10 衛武營站，步行前往。",
+        "audio":{
+        "zh":"audio/S03_zh.mp3",
+        "en":"audio/S03_en.mp3"
+        }
+        },
+        
+        
+        {
+        "id":"S04",
+        "name":"鳳儀書院",
+        "type":"探索",
+        "station":"O13 大東站",
+        "image":"images/S04.jpg",
+        "intro":"鳳儀書院建於清代，是台灣保存良好的傳統書院之一，展現地方教育與歷史文化。",
+        "english":"Fongyi Academy is a historic traditional academy showing Taiwan's educational culture.",
+        "traffic":"捷運橘線 O13 大東站，步行約6分鐘。",
+        "audio":{
+        "zh":"audio/S04_zh.mp3",
+        "en":"audio/S04_en.mp3"
+        }
+        },
+        
+        
+        {
+        "id":"S05",
+        "name":"黃埔新村",
+        "type":"探索",
+        "station":"O10 衛武營站",
+        "image":"images/S05.jpg",
+        "intro":"黃埔新村保存眷村文化特色，透過老建築與特色店家呈現高雄歷史記憶。",
+        "english":"Huangpu New Village preserves military village culture through old buildings and local shops.",
+        "traffic":"捷運橘線 O10 衛武營站附近。",
+        "audio":{
+        "zh":"audio/S05_zh.mp3",
+        "en":"audio/S05_en.mp3"
+        }
+        },
+        
+        
+        {
+        "id":"S06",
+        "name":"東便門",
+        "type":"探索",
+        "station":"O13 大東站",
+        "image":"images/S06.jpg",
+        "intro":"東便門是鳳山古城重要遺跡之一，見證鳳山過去的城市防禦與歷史發展。",
+        "english":"Dongbian Gate is a historic remain of Fengshan's old city walls and history.",
+        "traffic":"捷運橘線 O13 大東站，步行可達。",
+        "audio":{
+        "zh":"audio/S06_zh.mp3",
+        "en":"audio/S06_en.mp3"
+        }
+        },
+        
+        
+        {
+        "id":"S07",
+        "name":"澄瀾砲台",
+        "type":"探索",
+        "station":"O12 鳳山站",
+        "image":"images/S07.jpg",
+        "intro":"澄瀾砲台是鳳山重要歷史古蹟，保留清代防禦建築特色。",
+        "english":"Chenglan Fortress is a historic site showing Fengshan's defense architecture.",
+        "traffic":"捷運橘線 O12 鳳山站，步行可達。",
+        "audio":{
+        "zh":"audio/S07_zh.mp3",
+        "en":"audio/S07_en.mp3"
+        }
+        },
+        
+        
+        {
+        "id":"S08",
+        "name":"打鐵街",
+        "type":"探索",
+        "station":"O13 大東站",
+        "image":"images/S08.jpg",
+        "intro":"打鐵街是鳳山傳統產業街區之一，保留早期工藝與地方生活記憶。",
+        "english":"Datie Street is a historic area known for traditional crafts and local memories.",
+        "traffic":"捷運橘線 O13 大東站附近。",
+        "audio":{
+        "zh":"audio/S08_zh.mp3",
+        "en":"audio/S08_en.mp3"
+        }
+        },
+
+        {
+            "id":"T01",
+            "name":"鳳山天公廟",
+            "type":"信仰",
+            "station":"O13 大東站",
+            "image":"images/T01.jpg",
+            "intro":"鳳山天公廟是地方重要信仰中心，展現鳳山居民長久累積的宗教文化與傳統習俗。",
+            "english":"Fengshan Tian Gong Temple is an important religious site representing local traditions and beliefs.",
+            "traffic":"捷運橘線 O13 大東站，步行約5分鐘。",
+            "audio":{
+            "zh":"audio/T01_zh.mp3",
+            "en":"audio/T01_en.mp3"
+            }
+            },
+            
+            
+            {
+            "id":"T02",
+            "name":"鳳山城隍廟",
+            "type":"信仰",
+            "station":"O13 大東站",
+            "image":"images/T02.jpg",
+            "intro":"鳳山城隍廟具有悠久歷史，是鳳山重要民間信仰場所，保存豐富傳統文化。",
+            "english":"Fengyi Chenghuang Temple is a historic temple representing local folk beliefs and culture.",
+            "traffic":"捷運橘線 O13 大東站，步行可達。",
+            "audio":{
+            "zh":"audio/T02_zh.mp3",
+            "en":"audio/T02_en.mp3"
+            }
+            },
+            
+            
+            {
+            "id":"T03",
+            "name":"鳳山龍山寺",
+            "type":"信仰",
+            "station":"O12 鳳山站",
+            "image":"images/T03.jpg",
+            "intro":"鳳山龍山寺是地方重要古老寺廟之一，呈現傳統建築藝術與信仰文化。",
+            "english":"Fengshan Longshan Temple is a historic temple featuring traditional architecture and beliefs.",
+            "traffic":"捷運橘線 O12 鳳山站附近。",
+            "audio":{
+            "zh":"audio/T03_zh.mp3",
+            "en":"audio/T03_en.mp3"
+            }
+            },
+            
+            
+            {
+            "id":"T04",
+            "name":"雙慈亭",
+            "type":"信仰",
+            "station":"O12 鳳山站",
+            "image":"images/T04.jpg",
+            "intro":"雙慈亭是鳳山重要宗教文化景點，見證地方居民的信仰與生活。",
+            "english":"Shuangci Pavilion is a local religious site connected with community life and traditions.",
+            "traffic":"捷運橘線 O12 鳳山站附近。",
+            "audio":{
+            "zh":"audio/T04_zh.mp3",
+            "en":"audio/T04_en.mp3"
+            }
+            }
+         ]
+            
+
