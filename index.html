@@ -88,8 +88,12 @@
     <button class="confirm" onclick="confirmRoute()">確定</button>
     <div class="route-layout">
       <div id="route-list" class="route-list"></div>
-      <div class="route-image">
-        <img id="route-photo" src="" alt="路線圖片">
+      <div class="route-center">
+        <div class="route-image"><img id="route-photo" src="" alt="路線圖片"></div>
+        <div class="route-extra">
+          <a id="inline-map" class="inline-qr" target="_blank" rel="noopener noreferrer" href="#"><strong>Google Maps</strong><img id="inline-qr" alt="路線導航 QR Code"><span>掃碼導航</span></a>
+          <div class="inline-carbon"><h3>🌿 減碳效益比較</h3><p>（以高雄火車站出發估算）</p><table><thead><tr><th>🚕 計程車</th><th>🚇 捷運＋步行</th><th>🌿 減碳量</th></tr></thead><tbody><tr><td id="inline-car"></td><td id="inline-low"></td><td id="inline-saving"></td></tr></tbody></table></div>
+        </div>
       </div>
       <div id="route-spots" class="route-spots"></div>
     </div>
@@ -116,7 +120,7 @@
     </div>
     <div class="carbon-method-note">
       <strong>碳排估算說明</strong>
-      <p>碳排數值沿用原專題資料中的每趟路線暫估值。汽車與低碳交通應使用相同路線範圍及一致的排放係數口徑。現有路線資料中的數值屬專題原始暫估值，尚未依各路段實際距離、捷運／自行車／步行里程及乘車人數重新校正；正式成果展示前請完成距離與係數核對。實際導航與碳排估算可能因路線及交通方式不同而有差異。</p>
+      <p>碳排數值依最新提供的專題估算表，以高雄車站出發，比較全程計程車與捷運＋步行。汽車與低碳交通應使用相同路線範圍及一致的排放係數口徑。現有路線資料中的數值屬專題原始暫估值，尚未依各路段實際距離、捷運／自行車／步行里程及乘車人數重新校正；正式成果展示前請完成距離與係數核對。實際導航與碳排估算可能因路線及交通方式不同而有差異。</p>
     </div>
     <button class="back-home" onclick="showPage('routes')">返回路線</button>
   </section>

@@ -2425,3 +2425,30 @@ html, body { width:100%; height:100%; }
   .carbon-comparison { grid-template-columns: 1fr 1fr; }
   #route-qrcode { width: 190px; height: 190px; }
 }
+
+/* 路線意象圖下方：導航及減碳比較 */
+#routes .route-layout {display:grid;grid-template-columns:minmax(0, 24fr) minmax(0, 48fr) minmax(0, 28fr);gap:clamp(8px,1.3vw,22px);align-items:stretch;min-height:0;height:auto;flex-wrap:nowrap;}
+#routes .route-list,#routes .route-spots {width:auto;min-width:0;display:flex;flex-direction:column;}
+#routes .route-card,#routes .route-spots div {min-height:0;box-sizing:border-box;}
+#routes .route-card:not(.active-route) {color:#326e4c;}
+.route-center {min-width:0;display:flex;flex-direction:column;gap:8px;}
+#routes .route-image {width:100%;min-height:0;height:clamp(150px,46vh,580px);aspect-ratio:auto;flex:none;background:transparent;border-radius:16px;}
+#routes .route-image img {width:100%;height:100%;object-fit:contain;}
+.route-extra {display:grid;grid-template-columns:minmax(105px, 24%) minmax(0,1fr);gap:8px;align-items:stretch;}
+.inline-qr,.inline-carbon {background:#fffef8;border:1px solid #c5cfb5;border-radius:12px;padding:8px;min-width:0;box-sizing:border-box;color:#345b3d;}
+.inline-qr {display:flex;flex-direction:column;align-items:center;justify-content:center;text-decoration:none;font-size:clamp(10px,1vw,16px);gap:3px;}
+.inline-qr img {width:clamp(76px,9vw,136px);max-width:100%;height:auto;image-rendering:pixelated;}
+.inline-carbon {display:flex;flex-direction:column;justify-content:center;}
+.inline-carbon h3,.inline-carbon p {margin:0 0 4px;font-size:clamp(11px,1.1vw,19px);}
+.inline-carbon table {width:100%;border-collapse:collapse;table-layout:fixed;font-size:clamp(10px,1vw,17px);text-align:center;}
+.inline-carbon th,.inline-carbon td {border:1px solid #b5bfa5;padding:6px 3px;overflow-wrap:anywhere;}
+.inline-carbon th {background:#e5ead5;}.inline-carbon td {color:#222;font-weight:600;}.inline-carbon td:last-child {color:#326e4c;}
+@media(max-width:700px){#routes .route-layout {grid-template-columns:1fr;}#routes .route-list,#routes .route-spots {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));}#routes .route-image {height:auto;aspect-ratio:4/3;}.route-extra {grid-template-columns:105px minmax(0,1fr);}}
+
+/* 意象圖與下方資訊列等寬：四張原圖均為 4:3 */
+#routes .route-center { width:100%; max-width:min(100%, clamp(200px, 61.333333vh, 773.333333px)); justify-self:center; }
+#routes .route-image { width:100%; height:auto; aspect-ratio:4/3; min-height:0; overflow:hidden; }
+#routes .route-image img { display:block; width:100%; height:100%; max-height:none; object-fit:contain; }
+#routes .route-extra { width:100%; box-sizing:border-box; grid-template-columns:minmax(90px, 25%) minmax(0,1fr); }
+#routes .inline-qr img { width:min(100%, clamp(76px, 9vw, 136px)); }
+@media(max-width:700px) { #routes .route-center { max-width:100%; } }

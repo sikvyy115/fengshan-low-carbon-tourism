@@ -14,14 +14,14 @@
       "雙慈亭"
     ],
     "carbon": {
-      "car": 5.2,
-      "public": 1.8,
-      "reduce": 3.4,
+      "car": 1.88,
+      "public": 0.43,
+      "reduce": 1.45,
       "unit": "kg CO2e / route (basis to be verified)",
       "status": "provisional_project_estimate",
-      "methodNote": "沿用原專題資料中的估算值；目前尚未確認每人／每車計算基準，也未依各路段實際距離、運具係數及乘車人數重新校正。"
+      "methodNote": "依提供之專題估算表，以高雄車站出發，比較捷運＋步行與全程計程車。"
     },
-    "navigationUrl": "https://www.google.com/maps/dir/?api=1&origin=%E5%A4%A7%E6%9D%B1%E8%97%9D%E8%A1%93%E4%B8%AD%E5%BF%83,%E9%AB%98%E9%9B%84%E5%B8%82%E9%B3%B3%E5%B1%B1%E5%8D%80&destination=%E9%9B%99%E6%85%88%E4%BA%AD,%E9%AB%98%E9%9B%84%E5%B8%82%E9%B3%B3%E5%B1%B1%E5%8D%80&travelmode=walking&waypoints=%E5%90%B3%E8%A8%98%E9%A4%85%E8%88%96,%E9%AB%98%E9%9B%84%E5%B8%82%E9%B3%B3%E5%B1%B1%E5%8D%80|%E5%80%86%E4%BC%AF%E7%BE%8A%E8%82%89,%E9%AB%98%E9%9B%84%E5%B8%82%E9%B3%B3%E5%B1%B1%E5%8D%80|%E9%B3%B3%E5%B1%B1%E5%A4%A9%E5%85%AC%E5%BB%9F,%E9%AB%98%E9%9B%84%E5%B8%82%E9%B3%B3%E5%B1%B1%E5%8D%80"
+    "navigationUrl": "https://maps.app.goo.gl/dkbGhHEEUhdYMQuNA"
   },
   {
     "id": "R02",
@@ -38,14 +38,14 @@
       "南台春捲"
     ],
     "carbon": {
-      "car": 4.8,
-      "public": 1.5,
-      "reduce": 3.3,
+      "car": 2.22,
+      "public": 0.43,
+      "reduce": 1.79,
       "unit": "kg CO2e / route (basis to be verified)",
       "status": "provisional_project_estimate",
-      "methodNote": "沿用原專題資料中的估算值；目前尚未確認每人／每車計算基準，也未依各路段實際距離、運具係數及乘車人數重新校正。"
+      "methodNote": "依提供之專題估算表，以高雄車站出發，比較捷運＋步行與全程計程車。"
     },
-    "navigationUrl": "https://www.google.com/maps/dir/?api=1&origin=%E6%9D%B1%E4%BE%BF%E9%96%80,%E9%AB%98%E9%9B%84%E5%B8%82%E9%B3%B3%E5%B1%B1%E5%8D%80&destination=%E5%8D%97%E5%8F%B0%E6%98%A5%E6%8D%B2,%E9%AB%98%E9%9B%84%E5%B8%82%E9%B3%B3%E5%B1%B1%E5%8D%80&travelmode=walking&waypoints=%E6%89%93%E9%90%B5%E8%A1%97,%E9%AB%98%E9%9B%84%E5%B8%82%E9%B3%B3%E5%B1%B1%E5%8D%80|%E9%B3%B3%E5%B1%B1%E9%BE%8D%E5%B1%B1%E5%AF%BA,%E9%AB%98%E9%9B%84%E5%B8%82%E9%B3%B3%E5%B1%B1%E5%8D%80|%E9%BB%83%E5%9F%94%E6%96%B0%E6%9D%91,%E9%AB%98%E9%9B%84%E5%B8%82%E9%B3%B3%E5%B1%B1%E5%8D%80"
+    "navigationUrl": "https://maps.app.goo.gl/HMzS1VyiQtxBW5H49"
   },
   {
     "id": "R03",
@@ -62,14 +62,14 @@
       "鳳山城隍廟"
     ],
     "carbon": {
-      "car": 5.0,
-      "public": 1.7,
-      "reduce": 3.3,
+      "car": 1.76,
+      "public": 0.39,
+      "reduce": 1.37,
       "unit": "kg CO2e / route (basis to be verified)",
       "status": "provisional_project_estimate",
-      "methodNote": "沿用原專題資料中的估算值；目前尚未確認每人／每車計算基準，也未依各路段實際距離、運具係數及乘車人數重新校正。"
+      "methodNote": "依提供之專題估算表，以高雄車站出發，比較捷運＋步行與全程計程車。"
     },
-    "navigationUrl": "https://www.google.com/maps/dir/?api=1&origin=%E6%BE%84%E7%80%BE%E7%A0%B2%E5%8F%B0,%E9%AB%98%E9%9B%84%E5%B8%82%E9%B3%B3%E5%B1%B1%E5%8D%80&destination=%E9%B3%B3%E5%B1%B1%E5%9F%8E%E9%9A%8D%E5%BB%9F,%E9%AB%98%E9%9B%84%E5%B8%82%E9%B3%B3%E5%B1%B1%E5%8D%80&travelmode=walking&waypoints=%E6%98%8E%E5%B1%B1%E9%9D%92%E8%8D%89%E8%8C%B6,%E9%AB%98%E9%9B%84%E5%B8%82%E9%B3%B3%E5%B1%B1%E5%8D%80|%E8%80%81%E5%BC%B5%E6%84%9B%E7%8E%89,%E9%AB%98%E9%9B%84%E5%B8%82%E9%B3%B3%E5%B1%B1%E5%8D%80|%E9%B3%B3%E5%84%80%E6%9B%B8%E9%99%A2,%E9%AB%98%E9%9B%84%E5%B8%82%E9%B3%B3%E5%B1%B1%E5%8D%80"
+    "navigationUrl": "https://maps.app.goo.gl/KuTfh9A7izbNKds4A"
   },
   {
     "id": "R04",
@@ -84,13 +84,13 @@
       "高雄清真潮州牛雜餐廳"
     ],
     "carbon": {
-      "car": 4.5,
-      "public": 1.2,
-      "reduce": 3.3,
+      "car": 1.56,
+      "public": 0.33,
+      "reduce": 1.23,
       "unit": "kg CO2e / route (basis to be verified)",
       "status": "provisional_project_estimate",
-      "methodNote": "沿用原專題資料中的估算值；目前尚未確認每人／每車計算基準，也未依各路段實際距離、運具係數及乘車人數重新校正。"
+      "methodNote": "依提供之專題估算表，以高雄車站出發，比較捷運＋步行與全程計程車。"
     },
-    "navigationUrl": "https://www.google.com/maps/dir/?api=1&origin=%E8%A1%9B%E6%AD%A6%E7%87%9F%E5%9C%8B%E5%AE%B6%E8%97%9D%E8%A1%93%E6%96%87%E5%8C%96%E4%B8%AD%E5%BF%83,%E9%AB%98%E9%9B%84%E5%B8%82%E9%B3%B3%E5%B1%B1%E5%8D%80&destination=%E9%AB%98%E9%9B%84%E6%B8%85%E7%9C%9F%E6%BD%AE%E5%B7%9E%E7%89%9B%E9%9B%9C%E9%A4%90%E5%BB%B3,%E9%AB%98%E9%9B%84%E5%B8%82%E9%B3%B3%E5%B1%B1%E5%8D%80&travelmode=walking&waypoints=%E8%A1%9B%E6%AD%A6%E8%BF%B7%E8%BF%B7%E6%9D%91,%E9%AB%98%E9%9B%84%E5%B8%82%E9%B3%B3%E5%B1%B1%E5%8D%80"
+    "navigationUrl": "https://maps.app.goo.gl/dHnPkPyCDPVThEXK8"
   }
 ]
