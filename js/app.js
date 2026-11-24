@@ -245,6 +245,12 @@ function selectRoute(routeID, element) {
   currentRoute = route;
   const photo = document.getElementById("route-photo");
   photo.src = route.image || "";
+  document.getElementById("inline-qr").src = route.qrcode;
+  document.getElementById("inline-map").href = route.navigationUrl;
+  const c = route.carbon;
+  document.getElementById("inline-car").textContent = c.car.toFixed(2) + " kgCO₂e";
+  document.getElementById("inline-low").textContent = c.public.toFixed(2) + " kgCO₂e";
+  document.getElementById("inline-saving").textContent = "省下 " + c.reduce.toFixed(2) + " kg（" + Math.round(c.reduce / c.car * 100) + "%）";
   photo.onerror = () => { photo.removeAttribute("src"); photo.alt = "路線圖片尚未提供"; };
   const spots = document.getElementById("route-spots");
   spots.innerHTML = "";
@@ -304,13 +310,13 @@ function loadCarbon() {
     <div class="carbon-comparison">
       <article class="carbon-option car-option">
         <div class="carbon-option-icon">🚗</div>
-        <h3>汽油小客車</h3>
+        <h3>全程計程車</h3>
         <strong>${fmt(car)}</strong>
         <span>kg CO₂e／趟</span>
       </article>
       <article class="carbon-option low-carbon-option">
-        <div class="carbon-option-icon">🚇 🚲 🚶</div>
-        <h3>捷運＋自行車＋步行</h3>
+        <div class="carbon-option-icon">🚇 🚶</div>
+        <h3>捷運＋步行</h3>
         <strong>${fmt(low)}</strong>
         <span>kg CO₂e／趟</span>
       </article>
