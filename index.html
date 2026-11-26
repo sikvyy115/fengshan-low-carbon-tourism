@@ -4,20 +4,23 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>鳳山智慧低碳旅遊導覽系統</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css?v=esp1">
 </head>
 <body>
   <!-- 首頁 -->
   <section id="home" class="page active">
     <div class="hero">
       <div class="smart">
-        <div>🌡️ 溫度：-- °C</div>
-        <div>💧 濕度：-- %</div>
-        <small>感測器資料待 ESP32 串接</small>
+        <div>🌡️ 溫度：<span id="esp-temp">--</span> °C</div>
+        <div>💧 濕度：<span id="esp-hum">--</span> %</div>
+        <div>🌿 PM2.5：<span id="esp-pm">--</span> μg/m³</div>
+        <small id="esp-status" aria-live="polite">等待 ESP32 連線</small>
+        <button type="button" id="esp-settings" onclick="configureESP()">⚙ 連線設定</button>
       </div>
       <p>FENGSHAN SMART LOW-CARBON TOURISM</p>
       <h1>鳳山智慧低碳旅遊</h1>
       <p>搭乘捷運，探索鳳山的文化、美食與信仰</p>
+      <p id="esp-greeting" aria-live="polite">歡迎來到鳳山！一起探索古城之美，享受低碳旅遊！</p>
       <div class="home-buttons">
         <button onclick="openSpots()">景點介紹</button>
         <button onclick="openRoutes()">推薦路線</button>
@@ -131,6 +134,6 @@
     <h2>請將裝置橫向使用</h2>
     <p>本導覽系統目前支援電腦與橫向平板。</p>
   </div>
-  <script src="js/app.js"></script>
+  <script src="js/app.js?v=esp1"></script>
 </body>
 </html>

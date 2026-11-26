@@ -23,6 +23,7 @@ function showPage(pageID) {
   document.querySelectorAll(".page").forEach(page => page.classList.remove("active"));
   const target = document.getElementById(pageID);
   if (target) target.classList.add("active");
+  if (pageID === "home" || pageID === "spots") setESPRoute(0);
 }
 
 async function loadJSON(path) {
@@ -163,6 +164,8 @@ function showDetail(id) {
     ? "點選小導遊，先聽英文名稱，再聽中文介紹"
     : "此景點的語音尚未完成";
   showPage("detail");
+  const matchingRoute = routesData.find(r => r.spots.includes(spot.name));
+  setESPRoute(matchingRoute ? Number(matchingRoute.id.slice(1)) : 0);
 }
 
 function backToSpots() {
@@ -243,6 +246,7 @@ function selectRoute(routeID, element) {
   const route = routesData.find(item => item.id === routeID);
   if (!route) return;
   currentRoute = route;
+  if (document.getElementById("routes").classList.contains("active")) setESPRoute(Number(route.id.slice(1)));
   const photo = document.getElementById("route-photo");
   photo.src = route.image || "";
   document.getElementById("inline-qr").src = route.qrcode;
@@ -334,8 +338,56 @@ function loadCarbon() {
   `;
 }
 
-function updateSensorData() {
-  console.log("等待 ESP32 溫溼度資料串接；目前先顯示預設值。");
+// ESP32 local network integration
+const defaultGreeting = "歡迎來到鳳山！一起探索古城之美，享受低碳旅遊！";
+let espIP = localStorage.getItem("espIP") || "192.168.11.93";
+let desiredRoute = 0, pendingRoute = null, sendingRoute = false, sensorBusy = false;
+const greetings = [
+ ["天氣微涼、空氣清新，不妨漫遊古城，再來碗熱騰騰的倆伯羊肉吧！","今天氣溫較低，記得注意保暖，享受鳳山的歷史與美食！","今天氣溫較低，空氣品質較差，建議安排室內景點及美食之旅。"],
+ ["今天氣候宜人、空氣清新，正是低碳漫遊鳳山的好時機！","今天氣溫舒適，搭乘捷運、輕鬆步行，一起探索古城之美！","今天氣溫舒適，但空氣品質較差，建議減少長時間戶外活動。"],
+ ["今天氣溫偏高、空氣清新，記得補充水分，也可以來碗老張愛玉消消暑！","今天氣溫偏高，不妨喝杯明山青草茶，適時休息再出發！","今天氣溫偏高、空氣品質較差，推薦室內藝文景點，享受清涼旅程！"]
+];
+function espStatus(text) { document.getElementById("esp-status").textContent = text; }
+function configureESP() {
+ const ip = prompt("請輸入 ESP32 IP 位址", espIP);
+ if (ip === null) return;
+ const value = ip.trim();
+ if (!/^\d{1,3}(\.\d{1,3}){3}$/.test(value) || value.split(".").some(n => Number(n)>255)) { alert("請輸入正確 IPv4 位址，例如 192.168.11.93"); return; }
+ espIP = value; localStorage.setItem("espIP",value); setESPRoute(desiredRoute); updateSensorData();
+}
+async function espFetch(path) {
+ const controller = new AbortController();
+ const timer = setTimeout(() => controller.abort(), 4500);
+ try {
+  const response = await fetch(`http://${espIP}${path}`, {cache:"no-store", signal:controller.signal});
+  if (!response.ok) throw new Error(`HTTP ${response.status}`);
+  return await response.json();
+ } finally { clearTimeout(timer); }
+}
+function setESPRoute(id) { desiredRoute=id; pendingRoute=id; flushESPRoute(); }
+async function flushESPRoute() {
+ if (sendingRoute) return;
+ sendingRoute=true;
+ try {
+  while (pendingRoute !== null) {
+   const id=pendingRoute; pendingRoute=null;
+   try { const data=await espFetch(`/api/route?id=${id}`); if(data.route!==id) throw new Error("route mismatch"); espStatus(`ESP32 已連線｜${id ? "R0"+id : "熄燈"}`); }
+   catch(e) { console.warn("ESP32 route",e); espStatus("LED 控制失敗，請確認區域網路權限"); }
+  }
+ } finally { sendingRoute=false; }
+}
+function showESPData(data) {
+ const valid=data.valid===true && [data.temperature,data.humidity,data.pm25].every(Number.isFinite);
+ document.getElementById("esp-temp").textContent=valid?data.temperature.toFixed(1):"--";
+ document.getElementById("esp-hum").textContent=valid?data.humidity.toFixed(1):"--";
+ document.getElementById("esp-pm").textContent=valid?data.pm25:"--";
+ document.getElementById("esp-greeting").textContent=valid?"歡迎來到鳳山！"+greetings[data.temperature<24?0:data.temperature<=32?1:2][data.pm25<=12?0:data.pm25<=35?1:2]:defaultGreeting;
+}
+async function updateSensorData() {
+ if(sensorBusy) return; sensorBusy=true;
+ try { const data=await espFetch("/api/sensor"); showESPData(data); espStatus(data.route!==desiredRoute?"ESP32 已連線｜燈號未同步":data.valid?"ESP32 已連線":"ESP32 已連線｜等待感測器"); }
+ catch(e) { showESPData({}); espStatus("ESP32 未連線｜請檢查 IP / 網路權限"); console.warn("ESP32 sensor",e); }
+ finally { sensorBusy=false; }
 }
 
 window.addEventListener("pagehide", stopGuideAudio);
@@ -345,5 +397,7 @@ document.addEventListener("visibilitychange", () => {
 window.addEventListener("DOMContentLoaded", () => {
   loadAttractions();
   loadRoutes();
+  setESPRoute(0);
   updateSensorData();
+  setInterval(updateSensorData, 3000);
 });
